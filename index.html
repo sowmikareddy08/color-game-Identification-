@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <title>రంగు గుర్తింపు ఆట</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="welcome">
+    <h1>🙏 welcome!</h1>
+    <button onclick="goHome()">ఆరంభించండి</button>
+  </div>
+  <div id="home" style="display:none;">
+    <h2>రంగు గుర్తింపు ఆట</h2>
+    <button onclick="startGame()">ఆట మొదలు</button>
+  </div>
+  <div id="game" style="display:none;">
+    <p id="scoreLabel">స్కోరు: 0</p>
+    <p id="timeLabel">సమయం: 30 సెకండ్లు</p>
+    <img id="colorImage" src="" width="200" height="200" alt="color image" />
+    <div id="options"></div>
+    <p id="result"></p>
+    <audio id="colorSound"></audio>
+    <audio id="gameOverSound" src="violin-music-64019.mp3"></audio>
+    <audio id="bgMusic" src="violin-music-64019.mp3" loop></audio>
+  </div>
+  <div id="gameover" style="display:none;">
+    <h2>ఆట ముగిసింది!</h2>
+    <p id="finalScore"></p>
+    <button onclick="showAbout()">Bharati Script గురించి తెలుసుకోండి</button>
+  </div>
+  <div id="about" style="display: none;">
+    <h2>About Bharati Script</h2>
+    <div class="about-card">
+      <p>
+        Bharati is being proposed as a common script for India. The Roman script is used as a common
+        script for many European languages, which facilitates communication across nations.
+        Likewise, a common script for India is hoped to reduce communication barriers.
+      </p>
+      <img src="" alt="Bharati Script" width="100%" />
+      <h3>Important Links</h3>
+      <ul>
+        <li><a href="https://bharatiscript.org" target="_blank">https://bharatiscript.org</a></li>
+        <li><a href="https://nptel.ac.in" target="_blank">https://nptel.ac.in</a></li>
+        <li><a href="https://ArvindGuptaToys.com" target="_blank">https://ArvindGuptaToys.com</a></li>
+      </ul>
+      <p class="creator">Created By <a href="sowmikareddy08@gmail.com">sowmikareddy08@gmail.com</a></p>
+      <p class="creator">Created By <a href="ramakrishnakuthuru.004@gmail.com">ramakrishnakuthuru.004@gmail.com</a></p>
+      <p class="creator">Created By <a href="saichandanasunke941@gmail.com">saichandanasunke941@gmail.com</a></p>
+      <button onclick="goHome()">Go to Home</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
